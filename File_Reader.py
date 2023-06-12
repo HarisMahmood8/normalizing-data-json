@@ -6,11 +6,11 @@ def test_file_generator(data):
 
     if isinstance(data, list):
         for index, item in enumerate(data):
-            file_name = f"test_case_{index}.txt"
+            file_name = f"test_case_{index}.json"
             with open(file_name, 'w') as f:
                 f.write(json.dumps(item)) 
     else:
-        print("🚨🚨🚨🚨🚨🚨🚨🚨no array🚨🚨🚨🚨🚨🚨🚨🚨")
+        print("🚨❌🚨❌🚨❌no array❌🚨❌🚨❌🚨")
 
 
 input_data = 'testing_data.json'
